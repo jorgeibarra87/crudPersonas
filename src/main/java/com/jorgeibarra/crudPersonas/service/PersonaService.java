@@ -40,7 +40,7 @@ public class PersonaService implements IpersonaService {
 
     @Override
     public void delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        data.deleteById(id);    
     }
     
 }
