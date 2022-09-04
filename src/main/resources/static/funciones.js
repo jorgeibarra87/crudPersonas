@@ -20,7 +20,7 @@ function eliminar(id) {
                         }
                     });
                 } else {
-                    swal("Your imaginary file is safe!");
+                    location.href="/listar"; 
                 }
             });
 }
