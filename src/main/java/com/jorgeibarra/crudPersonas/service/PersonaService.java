@@ -30,7 +30,12 @@ public class PersonaService implements IpersonaService {
 
     @Override
     public int save(Persona p) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        int res = 0;
+        Persona persona= data.save(p);
+        if(!persona.equals(null)){
+            res =1;
+        }
+        return res;
     }
 
     @Override
