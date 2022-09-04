@@ -25,7 +25,7 @@ public class PersonaService implements IpersonaService {
 
     @Override
     public Optional<Persona> listarId(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        return data.findById(id);
     }
 
     @Override
